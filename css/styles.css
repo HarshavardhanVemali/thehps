@@ -1095,6 +1095,9 @@ footer .bi {
         border-left: 2px solid #0d6efd !important;
         border-bottom: 0px !important;
     }
+    .bg-dark {
+        overflow: hidden;
+    }
 }
 
 @media (max-width: 576px){
