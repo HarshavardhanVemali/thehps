@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - HPS</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script src="/js/scripts.js"></script>
+
+<body>
+    <style>
+.about-page {
+    padding-bottom: 50px;
+}
+
+.about-heading {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.about-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #666;
+}
+
+.about-subheading {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    background-image: linear-gradient(360deg, #217BFE 0%, #078EFB 33.53%, #AC87EB 67.74%, #EE4D5D 100%);
+    -webkit-background-clip: text;
+    color: transparent; 
+}
+.about-subheading.sub2{
+    color: #1e1765ff;
+}
+.about-header {
+    padding: 40px 0;
+    background: #f9f9f9;
+}
+
+.about-content {
+    padding: 40px 0;
+}
+
+.about-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    max-height: 400px;
+}
+.about-values {
+    background: #f0f0f0;
+    padding: 40px 0;
+}
+
+.value-title {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.icon-large {
+    font-size: 2.7rem;
+    color: #078EFB;
+}
+
+.about-team {
+    padding: 40px 0;
+}
+
+.team-member {
+    margin-bottom: 20px;
+}
+
+.team-name {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+.team-role {
+    font-size: 1rem;
+    color: #777;
+}
+
+@media (max-width: 768px) {
+    .about-image {
+        margin-bottom: 20px;
+    }
+     .team-member{
+         margin-bottom: 30px;
+     }
+}
+.about-page {
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.about-heading {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: 700;
+}
+
+.about-text {
+    font-size: 1rem;
+    line-height: 1.9;
+    color: #555; 
+}
+
+
+.about-header {
+    padding: 60px 0; 
+    background: #f9f9f9;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5); 
+    z-index: 1; 
+}
+
+.about-header .container {
+    position: relative;
+    z-index: 2; 
+}
+
+.about-header .bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.2; 
+}
+    </style>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-0">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between w-100 py-2">
+                <a href="index.html" class="navbar-brand d-flex align-items-center">
+                    <div class="icon me-2">
+                        <img class="img-fluid" src="/images/hps_logo.png" alt="Logo" style="max-height: 80px;">
+
+                    </div>
+                </a>
+
+                <div class="d-flex align-items-center">
+                   
+
+                    <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                            <li class="nav-item"><a href="about.html" class="nav-link active">About Us</a></li>
+                            <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                        </ul>
+                        
+
+                    </div>
+                    <div class="d-flex align-items-center">
+
+                        <div class="contact-links d-flex align-items-center ms-3">
+                            <a href="mailto:curiousatsolver@gmail.com"
+                                class="text-decoration-none text-dark contact-link  ms-2">
+                                <span class="contact-icon me-1">
+                                    <i class="bi bi-envelope-at-fill"></i>
+                                </span>
+                            </a>
+                            <a href="tel:+918639562606"
+                                class="text-decoration-none text-dark contact-link ms-2">
+                                <span class="contact-icon me-1">
+                                    <i class="bi bi-telephone"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                    aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <button id="scrollToTopBtn" title="Back to top">
+        <i class="bi bi-chevron-up"></i>
+    </button>
+    <div class="about-page">
+        <section class="about-header">
+            <img src="images/work place 4_enhanced.jpg" alt="HPS Background" class="bg-image">
+            <div class="container">
+                <h2 class="text-center mb-4 about-heading">
+                    About <span style="color: #078EFB;">HPS</span>
+                </h2>
+                <p class="text-center about-text" style="color: #0b2d37;">
+                    We are a team of passionate innovators dedicated to helping businesses thrive through technology.
+                    Learn more about our journey, values, and commitment to excellence.
+                </p>
+            </div>
+        </section>
+        <section class="about-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 about-image">
+                        <img src="images/work place.jpg" alt="HPS Team" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="about-subheading">Our Story</h3>
+                        <p class="about-text">
+                            HPS was founded with the vision of empowering businesses with cutting-edge IT solutions. Starting from humble beginnings, we've grown into a trusted partner for many, offering a range of services from digital marketing to custom software development. Our journey is defined by innovation, commitment, and a relentless pursuit of excellence.
+                        </p>
+                        <h3 class="about-subheading">Our Mission</h3>
+                        <p class="about-text">
+                            Our mission is to provide innovative solutions that drive our clients' success. We aim to leverage technology to streamline operations, increase efficiency, and create value for your business. We believe in the power of technology to transform businesses and are committed to making that transformation a reality for our clients.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about-values">
+            <div class="container">
+                <h3 class="text-center mb-4 about-subheading sub2">Our Values</h3>
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <i class="bi bi-lightbulb icon-large mb-3"></i>
+                        <h4 class="value-title">Innovation</h4>
+                        <p class="about-text">We strive to be at the forefront of technology, continually seeking innovative solutions that deliver exceptional results.</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <i class="bi bi-check-circle icon-large mb-3"></i>
+                        <h4 class="value-title">Excellence</h4>
+                        <p class="about-text">We are committed to delivering the highest quality services and solutions to our clients, with a focus on achieving excellence in all we do.</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <i class="bi bi-people icon-large mb-3"></i>
+                        <h4 class="value-title">Partnership</h4>
+                        <p class="about-text">We believe in building strong partnerships with our clients, working collaboratively to achieve shared success and growth.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--
+            <section class="about-team">
+            <div class="container">
+                <h3 class="text-center mb-4 about-subheading">Meet Our Team</h3>
+                <div class="row">
+                    <div class="col-md-3 text-center team-member">
+                        <img src="/images/team-member-1.jpg" alt="Team Member 1" class="img-fluid rounded-circle mb-3">
+                        <h5 class="team-name">Satish</h5>
+                        <p class="team-role">CEO</p>
+                    </div>
+                   <div class="col-md-3 text-center team-member">
+                        <img src="/images/team-member-2.jpg" alt="Team Member 2" class="img-fluid rounded-circle mb-3">
+                       <h5 class="team-name">Sriram</h5>
+                       <p class="team-role">CTO</p>
+                    </div>
+                   <div class="col-md-3 text-center team-member">
+                        <img src="/images/team-member-3.jpg" alt="Team Member 3" class="img-fluid rounded-circle mb-3">
+                        <h5 class="team-name">Harish</h5>
+                        <p class="team-role">Senior Software Engineer</p>
+                    </div>
+                   <div class="col-md-3 text-center team-member">
+                        <img src="/images/team-member-4.jpg" alt="Team Member 4" class="img-fluid rounded-circle mb-3">
+                        <h5 class="team-name">Rakesh</h5>
+                        <p class="team-role">Marketing Manager</p>
+                   </div>
+                </div>
+            </div>
+        </section>
+        -->
+        
+    </div>
+    <footer class="bg-dark text-white" style="padding-top: 0px;">
+        <div class="p-9om9971 pagelayer-row pagelayer-row-stretch-auto pagelayer-height-default">
+            <style pagelayer-style-id="9om9971">
+                .p-9om9971 .pagelayer-col-holder {
+                    padding: 10px;
+                }
+
+                .p-9om9971>.pagelayer-background-overlay {
+                    -webkit-transition: all 400ms !important;
+                    transition: all 400ms !important;
+                }
+
+                .p-9om9971 .pagelayer-svg-top .pagelayer-shape-fill {
+                    fill: #ffffff;
+                }
+
+                .p-9om9971 .pagelayer-row-svg .pagelayer-svg-top {
+                    width: 125%;
+                    height: 57px;
+                }
+
+                .p-9om9971 .pagelayer-svg-bottom .pagelayer-shape-fill {
+                    fill: #e44993;
+                }
+
+                .p-9om9971 .pagelayer-row-svg .pagelayer-svg-bottom {
+                    width: 100%;
+                    height: 100px;
+                }
+
+                .p-9om9971 {
+                    background: #065997;
+                    margin-top: 0px;
+                    margin-right: 0px;
+                    margin-bottom: 0px;
+                    margin-left: 0px;
+                    padding-top: 0px;
+                    padding-right: 0px;
+                    padding-bottom: 30px;
+                    padding-left: 0px;
+                }
+            </style>
+            <div class="pagelayer-row-shape">
+                <div class="pagelayer-row-svg">
+                    <svg class="pagelayer-svg-top">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+                            <path class="pagelayer-shape-fill" style="opacity:0.33"
+                                d="M670.3,26.21c50.4,4 99.94,6.49 123.24,23.79c13,9.8 76.7,33.75 109.5,30.45c32.8,-3.2 96.96,-54 96.96,-54v-36.44l-1070.7,18.74c0,0 91.5,38.45 115.5,50c27.71,13.33 54.97,41.63 154.74,-24.81c60,-39.95 119.86,113.11 323.76,24.81c19.4,-8.3 96.6,-36.55 147,-32.55z">
+                            </path>
+                            <path class="pagelayer-shape-fill" style="opacity:0.66"
+                                d="M918.41,24.95c63.9,0 81.59,37.5 81.59,37.5v-62.45l-1000,0l-7.46,57.95c0,0 7.46,22.5 94.5,-7.95c63.25,-22.13 106.3,42.15 210,-7.05c103.7,-49.2 241.4,-1.65 270,7.05c51.9,15.9 61,27.45 106.5,27.45c41.7,0 144.17,-52.4 241.87,-52.5z">
+                            </path>
+                            <path class="pagelayer-shape-fill"
+                                d="M921.5,50c73.7,-7.2 97.5,-50 97.5,-50l-1053,0c0,0 49.7,73.65 111,62.45c42.4,-7.6 30.2,-11.8 87,-27c57.2,-15.2 55.5,-32.05 184.5,14.55c129.1,46 227.41,-70.55 427.41,-13.05c63.5,18.1 71.89,20.25 145.59,13.05z">
+                            </path>
+                        </svg>
+                    </svg>
+
+                </div>
+            </div>
+
+            <div class="pagelayer-row-holder pagelayer-row pagelayer-auto pagelayer-width-auto">
+                <div pagelayer-id="ohb7245" class="p-ohb7245 pagelayer-col">
+                    <style pagelayer-style-id="ohb7245">
+                        .p-ohb7245>.pagelayer-background-overlay {
+                            -webkit-transition: all 400ms !important;
+                            transition: all 400ms !important;
+                        }
+                    </style>
+                    <div class="container">
+                        <div class="row" style="padding-top: 10px;">
+                            <div class="col-md-4 mb-4">
+                                <img class="img-fluid" src="/images/hps_logo.png" alt="Logo" style="max-height: 80px;">
+                                <p class="footer-text">HPS is your partner in transforming ideas into reality. We
+                                    specialize in Digital Marketing, Web Hosting, Custom Software Development, and
+                                    more.</p>
+                            </div>
+
+
+                            <div class="col-md-4 mb-4">
+                                <h4>Quick Links</h4>
+                                <ul class="list-unstyled">
+                                    <li><a href="#" class="text-white footer-link">Home</a></li>
+                                    <li><a href="#" class="text-white footer-link">Services</a></li>
+                                    <li><a href="#" class="text-white footer-link">Projects</a></li>
+                                    <li><a href="#" class="text-white footer-link">Blog</a></li>
+                                    <li><a href="#" class="text-white footer-link">Contact</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <h4>Contact Us</h4>
+                                <p class="footer-text">
+                                    <i class="bi bi-telephone me-2"></i> <a href="tel:+919246615251"
+                                        class="text-white footer-link">+91-9246615251</a><br>
+                                    <i class="bi bi-envelope me-2"></i> <a href="mailto:satish@thehps.in"
+                                        class="text-white footer-link">satish@thehps.in</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row m-0">
+                        <div class="col-12 text-center mt-4 py-2 copyright">
+                            <p class="mb-0">© Copyright – 2022 HPS. All Rights Reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('scrollToTopBtn').addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+
+</html>

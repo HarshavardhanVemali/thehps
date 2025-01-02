@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - HPS</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script src="/js/scripts.js"></script>
+</head>
+<style>
+       /*contactus*/
+#contact{
+    padding: 4rem 0;
+    background-image: url('/images/contactus.png');
+    background-size:cover; 
+}
+#contact p{
+    text-align: center;
+    color: #d2d8e4;
+}
+#contact h2{
+    text-align: center;
+    color: #f7f9fd;
+
+}
+.contact-form {
+    background-size: cover; 
+    background-position: center; 
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 20px auto; 
+    padding: 40px;
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.8); 
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); 
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #000; 
+    font-weight: 500; 
+}
+
+.form-group input,
+.form-group select,.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #939db6; 
+    border-radius: 5px;
+    color: #000; 
+    background-color: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    resize: none;
+}
+.form-group label::after {
+    content: "*"; 
+    color: #ee4d5d; 
+  }
+.form-group input:focus,
+.form-group select:focus,.form-group textarea:focus {
+    outline: none;
+    border-color: #4285f4; 
+    box-shadow: 0px 0px 8px rgba(66, 133, 244, 0.5); 
+}
+
+.submit{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+}
+.submit button{
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #4285f4;
+    color: white;
+}
+.submit button svg{
+    margin-left: 5px;
+}
+.submit button:hover{
+    background-color: #368EFE;
+    color: white;
+}
+.contact-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 120px; 
+    gap: 30px;
+  }
+  
+  .dice-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 16px; 
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2); 
+    box-shadow: 
+      5px 5px 10px rgba(0, 0, 0, 0.3), 
+      -5px -5px 10px rgba(255, 255, 255, 0.2); 
+    position: relative; 
+    transition: transform 0.2s ease-in-out; 
+  }
+  
+  .dice-button:hover {
+    transform: scale(1.03);
+    color: var(--gemini-color-white);
+  }
+  
+  .dice-button::before { 
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), transparent);
+  }
+  
+  .contact-text {
+    margin-left: 8px;
+  }
+   /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .contact-form {
+      width: 90%; 
+      padding: 30px; 
+        margin: 10px auto;
+      
+    }
+        .contact-info {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        gap: 20px;
+        padding: 10px;
+      }
+      
+      .dice-button {
+        margin-bottom: 10px;
+          width: 80%;
+      }
+      .contact-item{
+        width: -webkit-fill-available;
+        max-width: 200px;
+        text-align: center;
+      }
+      .contact-item a{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+      }
+  }
+  @media (max-width: 576px) {
+    .contact-form {
+      width: 95%;
+      padding: 20px;
+    }
+
+        .dice-button {
+             width: 90%;
+
+        }
+    }
+</style>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-0">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between w-100 py-2">
+                <a href="index.html" class="navbar-brand d-flex align-items-center">
+                    <div class="icon me-2">
+                        <img class="img-fluid" src="/images/hps_logo.png" alt="Logo" style="max-height: 80px;">
+
+                    </div>
+                </a>
+
+                <div class="d-flex align-items-center">
+                   
+
+                    <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                            <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                            <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                            <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+                        </ul>
+                        
+
+                    </div>
+                    <div class="d-flex align-items-center">
+
+                        <div class="contact-links d-flex align-items-center ms-3">
+                            <a href="mailto:curiousatsolver@gmail.com"
+                                class="text-decoration-none text-dark contact-link  ms-2">
+                                <span class="contact-icon me-1">
+                                    <i class="bi bi-envelope-at-fill"></i>
+                                </span>
+                            </a>
+                            <a href="tel:+918639562606"
+                                class="text-decoration-none text-dark contact-link ms-2">
+                                <span class="contact-icon me-1">
+                                    <i class="bi bi-telephone"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                    aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <button id="scrollToTopBtn" title="Back to top">
+        <i class="bi bi-chevron-up"></i>
+      </button>
+    <section id="contact">
+        <div class="container">
+          <h2 data-aos="fade-up">Contact Us</h2>
+          <div class="contact-info">
+            <div class="contact-item">
+              <a href="tel:+919246615251" class="dice-button">
+                <i class="bi bi-telephone"></i> 
+                <span class="contact-text">91-9246615251</span>
+              </a>
+            </div>
+            <div class="contact-item">
+              <a href="mailto:satish@thehps.in" class="dice-button">
+                <i class="bi bi-envelope-at"></i> 
+                <span class="contact-text">satish@thehps.in</span>
+              </a>
+            </div>
+            <div class="contact-item">
+                <a href="https://www.google.com/maps/place/31-7-85,+Assam+Garden+St,+Bangaramma+Metta,+Mahaarajupeta,+Visakhapatnam,+Andhra+Pradesh+530020/data=!4m2!3m1!1s0x3a39435d73598d6f:0xdd38057571aee0a6?sa=X&ved=1t:242&ictx=111" class="dice-button" target="_blank">
+                    <i class="bi bi-geo-alt"></i> 
+                  <span class="contact-text">Address</span>
+                </a>
+              </div>
+          </div>
+          </div>
+          <p data-aos="fade-up" data-aos-delay="200">
+            Get touch with us and be a part of this innovative experience!
+          </p>
+          <form action="" method="post" class="contact-form" id="contact-form" data-aos="fade-up" data-aos-delay="300">
+            <div class="form-group">
+              <label for="student_name">Name </label>
+              <input type="text" id="student_name" name="student_name" required/>
+            </div>
+            <div class="form-group">
+                <label for="email">Email </label>
+                <input type="email" id="email" name="email"required/>
+              </div>
+            <div class="form-group">
+              <label for="phone_number">Phone Number </label>
+              <input type="tel" id="phone_number" name="phone_number"required/>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject </label>
+                <input type="text" id="subject" name="subject"required/>
+            </div>
+            <div class="form-group">
+                <label for="messsage">Message </label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <div class="submit">
+                <button type="submit" class="btn">Send<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                    <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
+            </svg></button>
+                
+            </div>
+          </form>
+        </div>
+      </section>
+    
+    <footer class="bg-dark text-white" style="padding-top: 0px;">
+        <div class="p-9om9971 pagelayer-row pagelayer-row-stretch-auto pagelayer-height-default">
+            <style pagelayer-style-id="9om9971">
+                .p-9om9971 .pagelayer-col-holder {
+                    padding: 10px;
+                }
+
+                .p-9om9971>.pagelayer-background-overlay {
+                    -webkit-transition: all 400ms !important;
+                    transition: all 400ms !important;
+                }
+
+                .p-9om9971 .pagelayer-svg-top .pagelayer-shape-fill {
+                    fill: #ffffff;
+                }
+
+                .p-9om9971 .pagelayer-row-svg .pagelayer-svg-top {
+                    width: 125%;
+                    height: 57px;
+                }
+
+                .p-9om9971 .pagelayer-svg-bottom .pagelayer-shape-fill {
+                    fill: #e44993;
+                }
+
+                .p-9om9971 .pagelayer-row-svg .pagelayer-svg-bottom {
+                    width: 100%;
+                    height: 100px;
+                }
+
+                .p-9om9971 {
+                    background: #065997;
+                    margin-top: 0px;
+                    margin-right: 0px;
+                    margin-bottom: 0px;
+                    margin-left: 0px;
+                    padding-top: 0px;
+                    padding-right: 0px;
+                    padding-bottom: 30px;
+                    padding-left: 0px;
+                }
+            </style>
+            <div class="pagelayer-row-shape">
+                <div class="pagelayer-row-svg">
+                    <svg class="pagelayer-svg-top">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+                            <path class="pagelayer-shape-fill" style="opacity:0.33"
+                                d="M670.3,26.21c50.4,4 99.94,6.49 123.24,23.79c13,9.8 76.7,33.75 109.5,30.45c32.8,-3.2 96.96,-54 96.96,-54v-36.44l-1070.7,18.74c0,0 91.5,38.45 115.5,50c27.71,13.33 54.97,41.63 154.74,-24.81c60,-39.95 119.86,113.11 323.76,24.81c19.4,-8.3 96.6,-36.55 147,-32.55z">
+                            </path>
+                            <path class="pagelayer-shape-fill" style="opacity:0.66"
+                                d="M918.41,24.95c63.9,0 81.59,37.5 81.59,37.5v-62.45l-1000,0l-7.46,57.95c0,0 7.46,22.5 94.5,-7.95c63.25,-22.13 106.3,42.15 210,-7.05c103.7,-49.2 241.4,-1.65 270,7.05c51.9,15.9 61,27.45 106.5,27.45c41.7,0 144.17,-52.4 241.87,-52.5z">
+                            </path>
+                            <path class="pagelayer-shape-fill"
+                                d="M921.5,50c73.7,-7.2 97.5,-50 97.5,-50l-1053,0c0,0 49.7,73.65 111,62.45c42.4,-7.6 30.2,-11.8 87,-27c57.2,-15.2 55.5,-32.05 184.5,14.55c129.1,46 227.41,-70.55 427.41,-13.05c63.5,18.1 71.89,20.25 145.59,13.05z">
+                            </path>
+                        </svg>
+                    </svg>
+
+                </div>
+            </div>
+
+            <div class="pagelayer-row-holder pagelayer-row pagelayer-auto pagelayer-width-auto">
+                <div pagelayer-id="ohb7245" class="p-ohb7245 pagelayer-col">
+                    <style pagelayer-style-id="ohb7245">
+                        .p-ohb7245>.pagelayer-background-overlay {
+                            -webkit-transition: all 400ms !important;
+                            transition: all 400ms !important;
+                        }
+                    </style>
+                    <div class="container">
+                        <div class="row" style="padding-top: 10px;">
+                            <div class="col-md-4 mb-4">
+                                <img class="img-fluid" src="/images/hps_logo.png" alt="Logo" style="max-height: 80px;">
+                                <p class="footer-text">HPS is your partner in transforming ideas into reality. We
+                                    specialize in Digital Marketing, Web Hosting, Custom Software Development, and
+                                    more.</p>
+                            </div>
+
+
+                            <div class="col-md-4 mb-4">
+                                <h4>Quick Links</h4>
+                                <ul class="list-unstyled">
+                                    <li><a href="#" class="text-white footer-link">Home</a></li>
+                                    <li><a href="#" class="text-white footer-link">Services</a></li>
+                                    <li><a href="#" class="text-white footer-link">Projects</a></li>
+                                    <li><a href="#" class="text-white footer-link">Blog</a></li>
+                                    <li><a href="#" class="text-white footer-link">Contact</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <h4>Contact Us</h4>
+                                <p class="footer-text">
+                                    <i class="bi bi-telephone me-2"></i> <a href="tel:+919246615251"
+                                        class="text-white footer-link">+91-9246615251</a><br>
+                                    <i class="bi bi-envelope me-2"></i> <a href="mailto:satish@thehps.in"
+                                        class="text-white footer-link">satish@thehps.in</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row m-0">
+                        <div class="col-12 text-center mt-4 py-2 copyright">
+                            <p class="mb-0">© Copyright – 2022 HPS. All Rights Reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('scrollToTopBtn').addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+    </script>
+</body>
+</html>
