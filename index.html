@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hps</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script src="/js/scripts.js"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-0">
+        <div class="container"> 
+            <div class="d-flex align-items-center justify-content-between w-100 py-2">
+                <a href="{% url 'index' %}" class="navbar-brand d-flex align-items-center">
+                    <div class="icon me-2">
+                        <img class="img-fluid" src="/images/hps_logo.png" alt="Logo" style="max-height: 80px;">
+
+                    </div>
+                </a>
+    
+               <div class="d-flex align-items-center">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                        aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a href="{% url 'index' %}" class="nav-link active">Home</a></li>
+                            <li class="nav-item"><a href="{% url 'aboutus' %}" class="nav-link">About Us</a></li>
+    
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+                                <ul class="dropdown-menu rounded-0">
+                                    <li><a href="{% url 'researchpaper' %}" class="dropdown-item">Digital Marketing</a></li>
+                                    <li><a href="{% url 'postdoc' %}" class="dropdown-item">Web hosting</a></li>
+                                    <li><a href="{% url 'websitedevelopment' %}" class="dropdown-item">Software Developement</a></li>
+                                    <li><a href="{% url 'careerguidance' %}" class="dropdown-item">Billing Softwares</a></li>
+                                    <li><a href="{% url 'careerguidance' %}" class="dropdown-item">ERP Softwares</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a href="{% url 'contactus' %}" class="nav-link">Contact</a></li>
+                        </ul>
+                        <div class="d-flex align-items-center">
+                        
+                            <div class="contact-links d-flex align-items-center ms-3">
+                                <a href="mailto:curiousatsolver@gmail.com" class="text-decoration-none text-dark contact-link  ms-2">
+                                    <span class="contact-icon me-1">
+                                        <i class="bi bi-envelope-at-fill"></i>
+                                    </span>
+                                </a>
+                                <a href="tel:+918639562606" class="text-decoration-none text-dark contact-link ms-2">
+                                    <span class="contact-icon me-1">
+                                        <i class="bi bi-telephone"></i>
+                                    </span>
+                                </a>
+                           </div>
+                        </div>
+    
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </nav>
+    <button id="scrollToTopBtn" title="Back to top">
+        <i class="bi bi-chevron-up"></i>
+    </button>
+    <div pagelayer-id="wnj9568" class="pagelayer-row pagelayer-row-stretch-full pagelayer-height-default hero-section">
+        <div class="pagelayer-row-holder pagelayer-row pagelayer-auto pagelayer-width-full">
+
+            <div pagelayer-id="ez42803" class="pagelayer-col pagelayer-col-6 text-column">
+                <div class="pagelayer-col-holder">
+                    <div pagelayer-id="qat5750" class="pagelayer-heading">
+                        <div class="pagelayer-heading-holder sub-heading">
+                            <h6>Your Growth, Our Commitment</h6>
+                        </div>
+                    </div>
+                    <div pagelayer-id="k399980" class="pagelayer-heading">
+                        <div class="pagelayer-heading-holder main-heading">
+                            <h2>DRIVING YOUR BUSINESS<br> TOWARDS SUCCESS</h2>
+                        </div>
+                    </div>
+                    <div pagelayer-id="ywu1862" class="pagelayer-heading">
+                        <div class="pagelayer-heading-holder description">
+                            <p>Welcome to HPS – your trusted partner in transforming ideas into reality. 
+                               We specialize in Digital Marketing, Web Hosting, Custom Software Development, 
+                               and advanced solutions such as ERP Systems and Billing Software. 
+                               Our mission is to empower your business with innovative strategies and cutting-edge technologies, 
+                               designed to accelerate growth, streamline operations, and help you stay ahead of the competition.</p>
+                        </div>
+                    </div>
+                    
+                    
+                    <div pagelayer-id="uwn3821" class="pagelayer-btn">
+                        <a class="pagelayer-btn-holder pagelayer-ele-link pagelayer-btn-custom pagelayer-btn-custom"
+                            href="#">
+                            <span class="pagelayer-btn-text">Let's Build Your Future Together</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="image-container">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/work place.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/work place 3.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/work place 4_enhanced.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+          </div>
+         
+         </div>
+    </div>
+    
+    
+    <section class="ourservices" style="background: linear-gradient(to bottom, var(--gemini-color-grey-600), var(--gemini-color-grey-700));">
+        <div class="container">
+            <h2 style="color: aliceblue; display: flex; align-items: center;">
+                OUR <span style="color: #078EFB;"> SERVICES</span>
+            </h2>
+            <div class="row d-flex">
+                <div class="col-md-4 d-flex">
+                    <div class="service-item flex-fill">
+                        <h4 style="cursor: pointer;">
+                            <i class="bi bi-bullseye me-2"></i> Digital Marketing
+                        </h4>
+                        <p style="cursor: pointer;">Reach your target audience, drive engagement, and increase conversions with our expert strategies.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex">
+                    <div class="service-item flex-fill">
+                        <h4 style="cursor: pointer;">
+                            <i class="bi bi-palette2 me-2"></i> UI/UX
+                        </h4>
+                        <p style="cursor: pointer;">Enhance user satisfaction, usability, and drive conversions with intuitive design.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex">
+                    <div class="service-item flex-fill">
+                        <h4>
+                            <i class="bi bi-bar-chart-line me-2"></i> Interactive Data Dashboards
+                        </h4>
+                        <p>Transform raw data into clear, actionable insights that drive business strategies.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex">
+                    <div class="service-item flex-fill">
+                        <h4>
+                            <i class="bi bi-globe me-2"></i> Secure & Reliable Web Hosting
+                        </h4>
+                        <p>Fast, reliable hosting services to ensure your website is always available to your visitors.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex">
+                    <div class="service-item flex-fill">
+                        <h4>
+                            <i class="bi bi-code-slash me-2"></i> Custom Software Development
+                        </h4>
+                        <p>Tailored software solutions that meet your specific business requirements and enhance productivity.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex">
+                    <div class="service-item flex-fill">
+                        <h4>
+                            <i class="bi bi-receipt me-2"></i> Simplified Billing Solutions
+                        </h4>
+                        <p>Efficient billing software to streamline your financial process, reduce errors and enhance client relations.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex">
+                    <div class="service-item flex-fill">
+                        <h4>
+                            <i class="bi bi-diagram-3-fill me-2"></i> Enterprise ERP Solutions
+                        </h4>
+                        <p>Integrated business solutions to manage your operations, resources, and improve efficiency.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex">
+                    <div class="service-item flex-fill">
+                            <h4>
+                                <i class="bi bi-gear me-2"></i> Automation Services
+                            </h4>
+                            <p>Automate your tedious workflows, save time and reduce errors.</p>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dark text-white" style="padding-top: 0px;">
+        <div class="p-9om9971 pagelayer-row pagelayer-row-stretch-auto pagelayer-height-default">
+            <style pagelayer-style-id="9om9971">
+                
+    
+                .p-9om9971>.pagelayer-background-overlay {
+                    -webkit-transition: all 400ms !important;
+                    transition: all 400ms !important;
+                }
+    
+                .p-9om9971 .pagelayer-svg-top .pagelayer-shape-fill {
+                    fill: #ffffff;
+                }
+    
+                .p-9om9971 .pagelayer-row-svg .pagelayer-svg-top {
+                    width: 125%;
+                    height: 57px;
+                }
+    
+                .p-9om9971 .pagelayer-svg-bottom .pagelayer-shape-fill {
+                    fill: #e44993;
+                }
+    
+                .p-9om9971 .pagelayer-row-svg .pagelayer-svg-bottom {
+                    width: 100%;
+                    height: 100px;
+                }
+    
+                .p-9om9971 {
+                    background: #065997;
+                    margin-top: 0px;
+                    margin-right: 0px;
+                    margin-bottom: 0px;
+                    margin-left: 0px;
+                    padding-top: 0px; 
+                    padding-right: 0px;
+                    padding-bottom: 30px;  
+                    padding-left: 0px;
+                }
+            </style>
+            <div class="pagelayer-row-shape">
+                <div class="pagelayer-row-svg">
+                    <svg class="pagelayer-svg-top">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+                            <path class="pagelayer-shape-fill" style="opacity:0.33" d="M670.3,26.21c50.4,4 99.94,6.49 123.24,23.79c13,9.8 76.7,33.75 109.5,30.45c32.8,-3.2 96.96,-54 96.96,-54v-36.44l-1070.7,18.74c0,0 91.5,38.45 115.5,50c27.71,13.33 54.97,41.63 154.74,-24.81c60,-39.95 119.86,113.11 323.76,24.81c19.4,-8.3 96.6,-36.55 147,-32.55z"></path>
+                            <path class="pagelayer-shape-fill" style="opacity:0.66" d="M918.41,24.95c63.9,0 81.59,37.5 81.59,37.5v-62.45l-1000,0l-7.46,57.95c0,0 7.46,22.5 94.5,-7.95c63.25,-22.13 106.3,42.15 210,-7.05c103.7,-49.2 241.4,-1.65 270,7.05c51.9,15.9 61,27.45 106.5,27.45c41.7,0 144.17,-52.4 241.87,-52.5z"></path>
+                            <path class="pagelayer-shape-fill" d="M921.5,50c73.7,-7.2 97.5,-50 97.5,-50l-1053,0c0,0 49.7,73.65 111,62.45c42.4,-7.6 30.2,-11.8 87,-27c57.2,-15.2 55.5,-32.05 184.5,14.55c129.1,46 227.41,-70.55 427.41,-13.05c63.5,18.1 71.89,20.25 145.59,13.05z"></path>
+                        </svg>
+                    </svg>
+    
+                </div>
+            </div>
+    
+            <div class="pagelayer-row-holder pagelayer-row pagelayer-auto pagelayer-width-auto">
+                <div pagelayer-id="ohb7245" class="p-ohb7245 pagelayer-col">
+                    <style pagelayer-style-id="ohb7245">
+                        .p-ohb7245>.pagelayer-background-overlay {
+                            -webkit-transition: all 400ms !important;
+                            transition: all 400ms !important;
+                        }
+                    </style>
+                    <div class="container">
+                        <div class="row" style="padding-top: 10px;">
+                            <div class="col-md-4 mb-4">
+                                <img class="img-fluid" src="/images/hps_logo.png" alt="Logo" style="max-height: 80px;">
+                                <p class="footer-text">HPS is your partner in transforming ideas into reality. We specialize in Digital Marketing, Web Hosting, Custom Software Development, and more.</p>
+                                </div>
+    
+                            
+                            <div class="col-md-4 mb-4">
+                                <h4>Quick Links</h4>
+                                <ul class="list-unstyled">
+                                    <li><a href="#" class="text-white footer-link">Home</a></li>
+                                    <li><a href="#" class="text-white footer-link">Services</a></li>
+                                    <li><a href="#" class="text-white footer-link">Projects</a></li>
+                                    <li><a href="#" class="text-white footer-link">Blog</a></li>
+                                    <li><a href="#" class="text-white footer-link">Contact</a></li>
+                                </ul>
+                            </div>
+                              <div class="col-md-4 mb-4">
+                                <h4>Contact Us</h4>
+                                <p class="footer-text">
+                                    <i class="bi bi-telephone me-2"></i> <a href="tel:+919246615251" class="text-white footer-link">+91-9246615251</a><br>
+                                    <i class="bi bi-envelope me-2"></i> <a href="mailto:satish@thehps.in" class="text-white footer-link">satish@thehps.in</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="row m-0">
+                        <div class="col-12 text-center mt-4 py-2 copyright" >
+                            <p class="mb-0">© Copyright – 2022 HPS. All Rights Reserved.</p>
+                        </div>
+                    </div>
+    </footer>  
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('scrollToTopBtn').addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+        const carousel = document.getElementById('carouselExampleSlidesOnly');
+        const carouselInstance = new bootstrap.Carousel(carousel, {
+            interval: 3000, 
+            pause: false 
+        });
+    });
+    </script>
+</body>
+</html>
