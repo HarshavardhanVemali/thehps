@@ -1098,6 +1098,9 @@ footer .bi {
     .bg-dark {
         overflow: hidden;
     }
+    .about-heading {
+        font-size: 2rem !important;
+    }
 }
 
 @media (max-width: 576px){
